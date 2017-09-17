@@ -1,9 +1,44 @@
 doctype html
 html
   head
-    title Brett and Ashna's wedding web site
+    title Ashna and Brett are getting married!
     link(rel="stylesheet", href="/css/style.css")
   body
-    h1 Welcome
-    p This page is still being worked on, but is coming soon!
-    img(src="/images/couple.jpeg", title="The engagement!")
+    header
+      a(href="#details") Our Wedding
+      a(href="#travel") Experience India
+      a(href="#about") Our Story
+      a(href="#rsvp") RSVP
+
+    .section#intro
+      p October 26-28th, 2018 | Hyderabad, India
+      h1 Ashna and Brett are getting married
+      p
+        a(href="#") RSVP
+
+    .section#details
+      .textbox
+        h2 Our Wedding
+        p Information about Falaknuma, dates and itinerary. If it doesn't feel like we can do this well in one section, we can have a link to more details
+
+    .section#travel
+      .textbox
+        h2 Experience India
+        p We know it's a long trip, here are some things to do. Example 2 week and 1 week itenerary, recommendations for flights, hotel, dining.
+
+    .section#wedding
+      .textbox
+        p Separate section on what to expect from an indian wedding? Where to buy clothes, expectation setting for people who have never been to one, getting people excited.
+
+    .section#about
+      .textbox
+        h2 Our Story
+        p About the couple, with lots of photos. Do we want to do this as a timeline style? Carousel? I'd prefer more images and less text
+
+    .section#rsvp
+      .textbox
+        p We would love to have you join us
+        a(href="#") RSVP
+        p The best gift we could ask for is your presence at our wedding, but if you'd like to pick out something for us, you can browse our registry
+        a(href="#") Registry
+

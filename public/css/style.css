@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html, body {
   width: 100%;
   height: 100%;
@@ -12,4 +15,56 @@ img {
   height: 500px;
   display: block;
   margin: 0 auto;
+}
+
+header {
+  display: fixed;
+  opacity: 0;
+  display: none;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  background-size: cover;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .textbox {
+  padding: 20px;
+  background: #F8F8F8;
+  border: 1px solid #AAA;
+  border-radius: 4px;
+  color: #333;
+}
+
+.section#intro {
+  background-image: url("/images/ashnaandbrett.jpeg");
+  color: #FFF;
+}
+
+.section#details {
+  background-image: url("/images/falaknuma.jpg");
+}
+
+.section#travel {
+  background-image: url("/images/hyderabad.jpg");
+}
+
+.section#wedding {
+  background-image: url("/images/ceremony.jpeg");
+}
+
+.section#about {
+  background-image: url("/images/brett.jpeg");
+}
+
+.section#rsvp {
+  background-image: url("/images/toast.jpeg");
 }
