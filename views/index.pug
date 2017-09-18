@@ -3,6 +3,13 @@ html
   head
     title Ashna and Brett are getting married!
     link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet",type="text/css", href="/js/slick/slick.css")
+    link(rel="stylesheet",type="text/css", href="/js/slick/slick-theme.css")
+
+    script(type="text/javascript", src="//code.jquery.com/jquery-1.11.0.min.js")
+    script(type="text/javascript", src="/js/slick/slick.min.js")
+    script(type="text/javascript", src="/js/main.js")
+
   body
     header
       a(href="#details") Our Wedding
@@ -11,34 +18,68 @@ html
       a(href="#rsvp") RSVP
 
     .section#intro
-      p October 26-28th, 2018 | Hyderabad, India
-      h1 Ashna and Brett are getting married
-      p
-        a(href="#") RSVP
+      p.date October 25-27th, 2018 | Hyderabad, India
+      h1
+        | Ashna and Brett
+        br
+        | are getting married!
+      a#primary-rsvp(href="#") RSVP
 
     .section#details
-      .textbox
-        h2 Our Wedding
-        p Information about Falaknuma, dates and itinerary. If it doesn't feel like we can do this well in one section, we can have a link to more details
-
-    .section#travel
-      .textbox
-        h2 Experience India
-        p We know it's a long trip, here are some things to do. Example 2 week and 1 week itenerary, recommendations for flights, hotel, dining.
-
-    .section#wedding
-      .textbox
-        p Separate section on what to expect from an indian wedding? Where to buy clothes, expectation setting for people who have never been to one, getting people excited.
-
-    .section#about
-      .textbox
-        h2 Our Story
-        p About the couple, with lots of photos. Do we want to do this as a timeline style? Carousel? I'd prefer more images and less text
-
-    .section#rsvp
-      .textbox
-        p We would love to have you join us
-        a(href="#") RSVP
-        p The best gift we could ask for is your presence at our wedding, but if you'd like to pick out something for us, you can browse our registry
-        a(href="#") Registry
-
+      .day#day1
+        img.icon(src="/images/falaknuma.jpg")
+        h2 Pellikoduka
+        p.date Thursday, October 25th
+        p.description This traditional ceremony is intended to prepare the bride and groom for their wedding, and is open to all guests
+        p.location Falaknuma Palace
+      .day#day2
+        img.icon(src="/images/hyderabad.jpg")
+        h2 Sangeeth
+        p.date Friday, October 26th
+        p.description The Sangeeth takes place the eve before the wedding day and is a night filled with music, laughter, dance, and food
+        p.location Another location here
+      .day#day3
+        img.icon(src="/images/ceremony.jpeg")
+        h2 Pelli
+        p.date Saturday, October 27th
+        p.description The official wedding ceremony, with an intimate dinner reception afterwards to celebrate the couple
+        p.location Falaknuma Palace
+        
+    .section#story
+      h2.section-title Our Story
+      ul#timeline
+        li.left
+          img(src="/images/brett.jpeg")
+          p About 27 years ago, Brett was born in Los Gatos, California
+          .dot
+        li.right
+          img(src="/images/hyderabad.jpg")
+          p While on the other side of the world, Ashna was born in Japan
+          .dot
+        li.left
+          img(src="/images/brett.jpeg")
+          p On a fall day, brett and ashna meet over dinner
+          .dot
+        li.right
+          img(src="/images/toast.jpeg")
+          p They continued to spend time together, and eventually fell in love
+          .dot
+        li.left
+          img(src="/images/ceremony.jpeg")
+          p In May 2017, they went to Japan and brett proposed
+          .dot
+        li.right
+          img(src="/images/ceremony.jpeg")
+          p In August 2017, they went to see the eclipse in Portland and have an engagement ceremony
+          .dot
+        li.spacer
+      #timeline-centerpiece
+        img(src="/images/ashnaandbrett.jpeg")
+        p And now, they're getting married! It's super exciting!
+      
+      #carousel
+        img(src="/images/ashnaandbrett.jpeg")
+        img(src="/images/ceremony.jpeg")
+        img(src="/images/brett.jpeg")
+        img(src="/images/toast.jpeg")
+        img(src="/images/hyderabad.jpg")

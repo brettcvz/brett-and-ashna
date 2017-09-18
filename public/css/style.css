@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Merienda:700|Crimson+Text');
+
 * {
   box-sizing: border-box;
 }
+
 html, body {
   width: 100%;
   height: 100%;
@@ -8,9 +11,25 @@ html, body {
   padding: 0;
   background: url("/images/whirlpool.png");
 }
+
 h1, p {
   text-align: center;
 }
+
+h1, h2, h3, h4 {
+  font-family: 'Arima Madurai', cursive;
+}
+
+h2.section-title {
+  font-size: 36px;
+  color: #630947;
+}
+
+p {
+  font-family: 'Crimson Text', serif;
+  color: #222;
+}
+
 img {
   height: 500px;
   display: block;
@@ -47,10 +66,206 @@ header {
 .section#intro {
   background-image: url("/images/ashnaandbrett.jpeg");
   color: #FFF;
+  position: relative;
+}
+
+.section#intro .date {
+  position: absolute;
+  top: 12%;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 24px;
+  text-shadow: 1px 1px #333;
+  background: rgba(0,0,0,.15);
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.15);
+  color: #FFF;
+}
+
+.section#intro h1 {
+  font-family: 'Merienda', cursive;
+  font-size: 48px;
+  text-shadow: 2px 2px #333;
+  background: rgba(0,0,0,.15);
+  box-shadow: 0px 0px 35px 20px rgba(0, 0, 0, 0.15)
+}
+
+.section#intro #primary-rsvp {
+  font-family: 'Arima Madurai', cursive;
+  font-size: 24px;
+
+  border: 1px solid #630947;
+  border-radius: 10px;
+  padding: 10px 45px;
+  text-decoration: none;
+
+  background: rgb(255,255,255);
+  background: rgba(255,255,255,.8);
+  color: #630947;
+
+  position: absolute;
+  bottom: 12%;
+}
+.section#intro #primary-rsvp:hover,
+.section#intro #primary-rsvp:focus,
+.section#intro #primary-rsvp:active {
+  background: rgb(255,255,255);
+  font-weight: bold;
+  border-color: #630947;
 }
 
 .section#details {
   background-image: url("/images/falaknuma.jpg");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section#details .day {
+  width: 360px;
+  height: 400px;
+  max-height: 100%;
+
+  background: #F6F6F6;
+  border: 1px solid #630947;
+  border-radius: 2px;
+
+  text-align: center;
+
+  padding: 10px 35px;
+  background: url("/images/whirlpool.png");
+}
+
+.section#details .day .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-top: 20px;
+  border: 1px solid #630947;
+}
+
+.section#details .day h2 {
+  font-family: 'Arima Madurai', cursive;
+  color: #630947;
+  margin-bottom: 0px;
+}
+
+.section#details .day .date {
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.section#details .day .description {
+  font-size: 20px;
+}
+
+.section#details .day .location {
+  margin: 0;
+  font-size: 16px;
+  display: none;
+}
+
+.section#story {
+  height: auto;
+}
+
+#timeline {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 60%;
+}
+
+#timeline li {
+  width: 50%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+}
+
+#timeline li .dot {
+  background: #222;
+  width: 6px;
+  height: 12px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+#timeline li.left {
+  float: left;
+  border-right: 1px solid #222;
+  text-align: right;
+  flex-direction: row;
+  padding-bottom: 80px;
+}
+
+#timeline li.left .dot {
+  border-radius: 6px 0px 0px 6px;
+}
+
+#timeline li.right {
+  float: right;
+  border-left: 1px solid #222;
+  text-align: left;
+  flex-direction: row-reverse;
+  padding-top: 80px;
+}
+
+#timeline li.right .dot {
+  border-radius: 0 6px 6px 0;
+}
+
+#timeline li p {
+  display: inline-block;
+  margin: 0 20px;
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+#timeline li img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+#timeline li.spacer {
+  height: 80px;
+  border-right: 2px solid #222;
+  float: left;
+  margin-left: 1px;
+}
+
+#timeline-centerpiece {
+  clear: both;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+#timeline-centerpiece img {
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+}
+
+#carousel {
+  margin: 0 auto;
+	width: 600px;
+  margin-bottom: 50px;
+}
+
+#carousel img {
+  width: 600px;
+}
+
+#carousel .slick-prev:before,
+#carousel .slick-next:before {
+  color: #630947;
 }
 
 .section#travel {
