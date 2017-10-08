@@ -13,9 +13,9 @@ html
   body
     header
       a(href="#details") Our Wedding
-      a(href="#travel") Experience India
-      a(href="#about") Our Story
-      a(href="#rsvp") RSVP
+      a(href="#story") Our Story
+      a(href="#india") Experience India
+      a(href="#clothing") What to Wear
 
     .section#intro
       p.date October 25-27th, 2018 | Hyderabad, India
@@ -23,7 +23,8 @@ html
         | Ashna &amp; Brett
       a#primary-rsvp(href="#") RSVP
 
-    .section#details
+    .section.details
+      a.section-anchor#details
       .day#day1
         img.icon(src="/images/falaknuma.jpg")
         h2 Pellikoduka
@@ -43,7 +44,8 @@ html
         p.description The official wedding ceremony, with an intimate dinner reception afterwards to celebrate the couple
         p.location Falaknuma Palace
         
-    .section#story
+    .section.story
+      a.section-anchor#story
       h2.section-title Our Story
       ul#timeline
         li.left
@@ -93,3 +95,74 @@ html
         img(src="/images/brett.jpeg")
         img(src="/images/toast.jpeg")
         img(src="/images/hyderabad.jpg")
+
+    .section.india
+      a.section-anchor#india
+      h2.section-title Experience India
+
+      .trip
+        h3
+          | Jewels of India
+          small 5 days, 3 cities
+          a.right(href="#") Itinerary  &rsaquo;
+        ul.thumbnails
+          li
+            img(src="/images/hyderabad.jpg", title="Hyderabad") 
+          li
+            img(src="/images/ceremony.jpeg", title="Another") 
+          li
+            img(src="/images/hyderabad.jpg", title="Hyderabad") 
+          li
+            img(src="/images/ceremony.jpeg", title="Another") 
+          li
+            img(src="/images/hyderabad.jpg", title="Hyderabad") 
+          li
+            img(src="/images/ceremony.jpeg", title="Another") 
+          li
+            img(src="/images/hyderabad.jpg", title="Hyderabad") 
+          li
+            img(src="/images/ceremony.jpeg", title="Another") 
+
+      .trip
+        h3
+          | An Even Better Trip
+          small 12 days, 6 cities
+          a.right(href="#") Itinerary  &rsaquo;
+        ul.thumbnails
+          li
+            img(src="/images/hyderabad.jpg", title="Hyderabad") 
+          li
+            img(src="/images/ceremony.jpeg", title="Another") 
+          li
+            img(src="/images/hyderabad.jpg", title="Hyderabad") 
+          li
+            img(src="/images/ceremony.jpeg", title="Another") 
+          li
+            img(src="/images/hyderabad.jpg", title="Hyderabad") 
+          li
+            img(src="/images/ceremony.jpeg", title="Another") 
+          li
+            img(src="/images/hyderabad.jpg", title="Hyderabad") 
+          li
+            img(src="/images/ceremony.jpeg", title="Another")
+
+      p.notice
+        | For those looking for accomodations in Hyderabad, we will update this site soon with details about where to stay.
+
+    .section.clothing
+      a.section-anchor#clothing
+      img.left-half(src="/images/dress.jpg", title="Dress")
+      .right-half
+        h2.section-title What to wear
+        p
+          | Seitan butcher cred post-ironic pickled taiyaki ennui occupy selfies actually edison bulb polaroid. Readymade copper mug occupy lomo, affogato cronut actually. Drinking vinegar meh lo-fi marfa biodiesel. 
+        p 
+          | Skateboard bicycle rights bespoke organic chicharrones flexitarian tousled. Austin meggings thundercats tilde hoodie authentic chambray aesthetic kogi enamel pin narwhal fashion axe. Cloud bread lomo tacos brunch. La croix biodiesel subway tile pok pok live-edge yuccie, 90's taxidermy umami hexagon waistcoat DIY letterpress whatever.
+
+    .section#rsvp
+      .action-prompt
+        p.prompt We look forward to seeing you, let us know if you can attend.
+        a.action#secondary-rsvp(href="#") RSVP
+      .action-prompt
+        p.prompt Your presence is present enough, but we also like gifts!
+        a.action(href="#") Registry

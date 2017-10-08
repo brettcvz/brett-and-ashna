@@ -37,9 +37,32 @@ img {
 }
 
 header {
-  display: fixed;
-  opacity: 0;
-  display: none;
+  position: fixed;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+  opacity: 0.6;
+}
+
+header:hover {
+  opacity: 0.9;
+}
+
+
+header a {
+  color: #FFF;
+  font-family: 'Crimson Text', serif;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header a:focus,
+header a:hover,
+header a:active {
+  text-decoration: underline;
 }
 
 .section {
@@ -55,12 +78,9 @@ header {
   align-items: center;
 }
 
-.section .textbox {
-  padding: 20px;
-  background: #F8F8F8;
-  border: 1px solid #AAA;
-  border-radius: 4px;
-  color: #333;
+.section-anchor {
+  position: absolute;
+  top: -50px;
 }
 
 .section#intro {
@@ -111,7 +131,7 @@ header {
   border-color: #630947;
 }
 
-.section#details {
+.section.details {
   background-image: url("/images/falaknuma.jpg");
   background-image: url("http://www.volt.org/Geteducated/skyglow2.gif");
   display: flex;
@@ -120,7 +140,7 @@ header {
   justify-content: space-around;
 }
 
-.section#details .day {
+.section.details .day {
   width: 330px;
   height: 450px;
   max-height: 100%;
@@ -135,7 +155,7 @@ header {
   background: url("/images/whirlpool.png");
 }
 
-.section#details .day .icon {
+.section.details .day .icon {
   width: 160px;
   height: 160px;
   border-radius: 80px;
@@ -143,30 +163,30 @@ header {
   border: 2px solid #222;
 }
 
-.section#details .day h2 {
+.section.details .day h2 {
   font-family: 'Arima Madurai', cursive;
   color: #630947;
   color: #222;
   margin-bottom: 0px;
 }
 
-.section#details .day .date {
+.section.details .day .date {
   font-size: 16px;
   margin: 0;
   text-transform: uppercase;
 }
 
-.section#details .day .description {
+.section.details .day .description {
   font-size: 20px;
 }
 
-.section#details .day .location {
+.section.details .day .location {
   margin: 0;
   font-size: 16px;
   display: none;
 }
 
-.section#story {
+.section.story {
   height: auto;
 }
 
@@ -270,31 +290,135 @@ header {
 
 #carousel {
   margin: 0 auto;
-	width: 95%;
+	width: 100%;
   margin-bottom: 50px;
 }
 
-#carousel img {
-  width: 1024px;
+#carousel .slick-prev {
+  left: 25px;
+  z-index: 1;
+}
+
+#carousel .slick-next {
+  right: 25px;
+  z-index: 1;
+}
+
+#carousel .slick-dots {
+  bottom: 50px;
+}
+
+#carousel .slick-dots li button:before {
+  color: #FFF;
+}
+
+#carousel .slick-dots li.slick-active button:before {
+  color: #630947;
 }
 
 #carousel .slick-prev:before,
 #carousel .slick-next:before {
-  color: #630947;
+  color: #FFF;
 }
 
-.section#travel {
-  background-image: url("/images/hyderabad.jpg");
+.section.india h3 small {
+  margin-left: 5px;
 }
 
-.section#wedding {
-  background-image: url("/images/ceremony.jpeg");
+.section.india h3 .right {
+  float: right;
 }
 
-.section#about {
-  background-image: url("/images/brett.jpeg");
+.section.india .trip {
+  max-width: 880px;
+  padding: 0 40px;
+  margin-bottom: 30px;
+}
+
+.section.india .trip .thumbnails {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section.india .trip .thumbnails li {
+  float: left;
+}
+
+.section.india .trip .thumbnails img {
+  width: 100px;
+  height: 80px;
+}
+
+.section.india .notice {
+  border: 1px solid #630947;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-size: 20px;
+  background: #FFF;
+  margin-bottom: 100px;
+}
+
+.section.clothing {
+  flex-direction: row;
+  background: #FFF;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.section.clothing .left-half {
+  height: 100%;
+  flex-grow: 0;
+}
+
+.section.clothing .right-half {
+  padding-left: 30px;
+}
+
+.section.clothing .right-half p {
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .section#rsvp {
   background-image: url("/images/toast.jpeg");
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.section .action-prompt {
+  width: 50%;
+  padding: 40px 160px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.section .action-prompt p {
+  color: #FFF;
+  font-size: 24px;
+  line-height: 36px;
+  text-shadow: 1px 1px #333;
+}
+
+.section .action-prompt .action {
+  font-family: 'Arima Madurai', cursive;
+  font-size: 20px;
+
+  border: 1px solid #630947;
+  border-radius: 8px;
+  padding: 8px 36px;
+  text-decoration: none;
+
+  background: rgb(255,255,255);
+  background: rgba(255,255,255,.8);
+  color: #630947;
+}
+
+.section .action-prompt .action:hover,
+.section .action-prompt .action:focus,
+.section .action-prompt .action:active {
+  background: rgb(255,255,255);
+  font-weight: bold;
+  border-color: #630947;
 }
