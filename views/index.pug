@@ -5,10 +5,12 @@ html
     link(rel="stylesheet", href="/css/style.css")
     link(rel="stylesheet",type="text/css", href="/js/slick/slick.css")
     link(rel="stylesheet",type="text/css", href="/js/slick/slick-theme.css")
+    link(rel="stylesheet",type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css")
 
     script(type="text/javascript", src="//code.jquery.com/jquery-1.11.0.min.js")
     script(type="text/javascript", src="/js/slick/slick.min.js")
     script(type="text/javascript", src="/js/main.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js")
 
   body
     header
@@ -25,15 +27,31 @@ html
     .section.details
       a.section-anchor#details
       .day#day1
-        img.icon(src="/images/sangeeth-color-alt.png")
+        img.icon(src="/images/sangeeth.png")
         h2 Sangeeth
         p.date Friday, October 26th
         p.description A lively and colorful evening of music and dance to celebrate the upcoming nuptials, held at the Park Hyatt, Hyderabad.
+        a(href="#sangeeth", rel="modal:open") Learn more
+        #sangeeth.modal.detail-modal
+          img(src="/images/modal-sangeeth.jpg")
+          h3 Sangeeth
+          p
+            | The Sangeeth is a lively and colorful evening of celebratory music and dance. Friends and family of the bride's and groom’s each come prepared to face off with choreographed moves (don't worry, we'll be hosting dance practice!)
+          p
+            | Recommended attire: Colorful! For those who would like to wear Indian clothes, this would be a great occasion to.
       .day#day2
-        img.icon(src="/images/kalyanam-color-alt.png")
+        img.icon(src="/images/kalyanam.png")
         h2 Kalyanam
         p.date Saturday, October 27th
         p.description A traditional Hindu wedding ceremony followed by dinner and festivities at Hyderabad's iconic Falaknuma Palace.
+        a(href="#kalyanam", rel="modal:open") Learn more 
+        #kalyanam.modal.detail-modal
+          img(src="/images/modal-kalyanam.jpg")
+          h3 Kalyanam
+          p
+            | A traditional Hindu ceremony will be followed by dinner and dancing in iconic Falaknuma Palace, once home to the monarch (Nizam) of the Hyderabad princely state. Set atop a hill, its breathtaking marble facade and terraced gardens are a window into old-world Hyderabadi splendor.
+          p
+            | Recommended attire: Indian formal or Western black tie optional
         
     .section.story
       a.section-anchor#story
@@ -114,52 +132,30 @@ html
     .section.india
       a.section-anchor#india
       h2.section-title Experience India
+      p.intro
+        | For those visiting India for the first time, we encourage you to make a trip of it! India is an incredible country and we've put together a few different itineraries that we think you'll love. Feel free to customize any of these itinerariers to your preferences, timeline, and budget. 
 
-      .trip
-        h3
-          | Jewels of India
-          small 5 days, 3 cities
-          a.right(href="#") Itinerary  &rsaquo;
-        ul.thumbnails
-          li
-            img(src="/images/hyderabad.jpg", title="Hyderabad") 
-          li
-            img(src="/images/ceremony.jpeg", title="Another") 
-          li
-            img(src="/images/hyderabad.jpg", title="Hyderabad") 
-          li
-            img(src="/images/ceremony.jpeg", title="Another") 
-          li
-            img(src="/images/hyderabad.jpg", title="Hyderabad") 
-          li
-            img(src="/images/ceremony.jpeg", title="Another") 
-          li
-            img(src="/images/hyderabad.jpg", title="Hyderabad") 
-          li
-            img(src="/images/ceremony.jpeg", title="Another") 
+      .trips
+        .trip
+          .img-header
+            img(src="/images/trip-golden-triangle.jpg") 
+          h3 Golden Triangle
+          p Immerse yourself in the bustling lanes of Delhi, the capital metropolis; marvel at the splendor of the Taj Mahal at sunrise; ascend the Amber Fort by elephant in Jaipur.
+          a(href="#") Explore
 
-      .trip
-        h3
-          | An Even Better Trip
-          small 12 days, 6 cities
-          a.right(href="#") Itinerary  &rsaquo;
-        ul.thumbnails
-          li
-            img(src="/images/hyderabad.jpg", title="Hyderabad") 
-          li
-            img(src="/images/ceremony.jpeg", title="Another") 
-          li
-            img(src="/images/hyderabad.jpg", title="Hyderabad") 
-          li
-            img(src="/images/ceremony.jpeg", title="Another") 
-          li
-            img(src="/images/hyderabad.jpg", title="Hyderabad") 
-          li
-            img(src="/images/ceremony.jpeg", title="Another") 
-          li
-            img(src="/images/hyderabad.jpg", title="Hyderabad") 
-          li
-            img(src="/images/ceremony.jpeg", title="Another")
+        .trip
+          .img-header
+            img(src="/images/trip-south.jpg") 
+          h3 Southern Splendors
+          p This itinerary takes you to the crown Jewel of Southern India, Kerala, a layered landscape of backwater canals, beaches, hill stations, and wildlife sanctuaries.
+          a(href="#") Explore
+
+        .trip
+          .img-header
+            img(src="/images/trip-jewels.jpg") 
+          h3 Jewels of India
+          p For those spending a little more time in India, this trip combines the best of both the North and South.
+          a(href="#") Explore
 
     .section.travel
       a.section-anchor#travel
