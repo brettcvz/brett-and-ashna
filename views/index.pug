@@ -15,86 +15,101 @@ html
       a(href="#details") Our Wedding
       a(href="#story") Our Story
       a(href="#india") Experience India
+      a(href="#travel") Travel Details
       a(href="#clothing") What to Wear
+      a(href="#rsvp") RSVP
 
     .section#intro
-      p.date October 25-27th, 2018 | Hyderabad, India
-      h1
-        | Ashna &amp; Brett
-      a#primary-rsvp(href="#") RSVP
+      img#intro-text(src="/images/intro-text.png", alt="Ashna and Brett are getting married!")
 
     .section.details
       a.section-anchor#details
       .day#day1
-        img.icon(src="/images/falaknuma.jpg")
-        h2 Pellikoduka
-        p.date Thursday, October 25th
-        p.description This traditional ceremony is intended to prepare the bride and groom for their wedding, and is open to all guests
-        p.location Falaknuma Palace
-      .day#day2
-        img.icon(src="/images/hyderabad.jpg")
+        img.icon(src="/images/sangeeth-color-alt.png")
         h2 Sangeeth
         p.date Friday, October 26th
-        p.description The Sangeeth takes place the eve before the wedding day and is a night filled with music, laughter, dance, and food
-        p.location Another location here
-      .day#day3
-        img.icon(src="/images/ceremony.jpeg")
-        h2 Pelli
+        p.description A lively and colorful evening of music and dance to celebrate the upcoming nuptials, held at the Park Hyatt, Hyderabad.
+      .day#day2
+        img.icon(src="/images/kalyanam-color-alt.png")
+        h2 Kalyanam
         p.date Saturday, October 27th
-        p.description The official wedding ceremony, with an intimate dinner reception afterwards to celebrate the couple
-        p.location Falaknuma Palace
+        p.description A traditional Hindu wedding ceremony followed by dinner and festivities at Hyderabad's iconic Falaknuma Palace.
         
     .section.story
       a.section-anchor#story
       h2.section-title Our Story
       ul#timeline
         li.left
-          img(src="/images/brett.jpeg")
+          .icon.map
+            include ../public/images/timeline/map.svg
           p
             span.year 1996
             br
-            | About 27 years ago, Brett was born in Los Gatos, California
+            | Ashna's family moved to Saratoga, just 4 miles away from Brett's home in Los Gatos. They never met.
           .dot
         li.right
-          img(src="/images/hyderabad.jpg")
-          p 
-            span.year 2008
-            br
-            | Brett went to college to become an enginerd and Ashna went off to a one of those artsy-fartsy schools
-          .dot
-        li.left
-          img(src="/images/brett.jpeg")
+          .icon
+            include ../public/images/timeline/sf.svg
           p 
             span.year 2012
             br
-            | Brett graduated from MIT and moved to SF to do start-uppy things
+            | Brett graduated from MIT and moved to San Franciscco to do start-uppy things.
           .dot
-        li.right
-          img(src="/images/toast.jpeg")
+        li.left
+          .icon.nyc
+            include ../public/images/timeline/nyc.svg
           p 
             span.year 2012
             br
-            | Ashna graduated from Yale and moved to NYC to do business-y things
-          .dot
-        li.left
-          img(src="/images/ceremony.jpeg")
-          p In May 2017, they went to Japan and brett proposed
+            | Ashna graduated from Yale and headed to NYC to do business-y things. Two years later, she too made her way back West...
           .dot
         li.right
-          img(src="/images/ceremony.jpeg")
-          p In August 2017, they went to see the eclipse in Portland and have an engagement ceremony
+          .icon.phone
+            include ../public/images/timeline/phone.svg
+          p 
+            span.year 2014
+            br
+            | Weeks after Ashna moved to SF, she and Brett first met. With the help of homemade snickerdoodles, what started as friendship turned into something more.
+          .dot
+        li.left
+          .icon.letter
+            include ../public/images/timeline/letter.svg
+          p 
+            span.year 2017
+            br
+            | While visiting Miyajima Island in Japan, amidst sunset overlooking the sea, Brett pulled out a letter for Ashna ending in one very special question....
+          .dot
+        li.right
+          .icon.sunset
+            include ../public/images/timeline/sunset.svg
+          p 
+            span.year 2017
+            br
+            | ...and she said yes! Overjoyed, they rode off into the sunset (not really, but that's what it felt like!)
           .dot
         li.spacer
       #timeline-centerpiece
-        img(src="/images/ashnaandbrett.jpeg")
+        .icon
+          include ../public/images/timeline/toast.svg
         p And now, they're getting married! It's super exciting!
       
       #carousel
-        img(src="/images/ashnaandbrett.jpeg")
-        img(src="/images/ceremony.jpeg")
-        img(src="/images/brett.jpeg")
-        img(src="/images/toast.jpeg")
-        img(src="/images/hyderabad.jpg")
+        img(src="/images/carousel/4.jpg")
+        img(src="/images/carousel/1.jpg")
+        img(src="/images/carousel/7.jpg")
+        img(src="/images/carousel/10.jpg")
+        img(src="/images/carousel/11.jpg")
+        img(src="/images/carousel/12.jpg")
+        img(src="/images/carousel/9.jpg")
+        img(src="/images/carousel/13.jpg")
+        img(src="/images/carousel/6.jpg")
+        img(src="/images/carousel/18.jpg")
+        img(src="/images/carousel/19.jpg")
+        img(src="/images/carousel/14.jpg")
+        img(src="/images/carousel/17.jpg")
+        img(src="/images/carousel/15.jpg")
+        img(src="/images/carousel/16.jpg")
+        img(src="/images/carousel/2.jpg")
 
     .section.india
       a.section-anchor#india
@@ -146,23 +161,52 @@ html
           li
             img(src="/images/ceremony.jpeg", title="Another")
 
-      p.notice
-        | For those looking for accomodations in Hyderabad, we will update this site soon with details about where to stay.
+    .section.travel
+      a.section-anchor#travel
+      .left-half
+        h2.section-title Travel Details
+        h3 Flights
+        p
+          | You can fly directly into Hyderabad via Rajiv Gandhi International Airport. If you are spending time in other cities you may want to fly in and out of Bombay or Delhi instead.  We encourage you to book your airfare as far in advance as possible for the best fares!
+        h3 Visas
+        p
+          | All US citizens will need a visa to enter India, but you can easily 
+          a.on-dark(href="https://indianvisaonline.gov.in/evisa/tvoa.html") file for an e-Visa online
+          | . Please do so as soon as you've booked tickets!
+        h3 Accommodations
+        p
+          | For those looking for accomodations in Hyderabad, we're working on arrangements with some wonderful local hotels. Check back in December for updated information!
+
+      img.right-half(src="/images/falaknuma.jpg", alt="Falaknuma")
+
 
     .section.clothing
       a.section-anchor#clothing
-      img.left-half(src="/images/dress.jpg", title="Dress")
+      img.left-half(src="/images/dress.jpg", alt="Dress")
       .right-half
         h2.section-title What to wear
         p
-          | Seitan butcher cred post-ironic pickled taiyaki ennui occupy selfies actually edison bulb polaroid. Readymade copper mug occupy lomo, affogato cronut actually. Drinking vinegar meh lo-fi marfa biodiesel. 
-        p 
-          | Skateboard bicycle rights bespoke organic chicharrones flexitarian tousled. Austin meggings thundercats tilde hoodie authentic chambray aesthetic kogi enamel pin narwhal fashion axe. Cloud bread lomo tacos brunch. La croix biodiesel subway tile pok pok live-edge yuccie, 90's taxidermy umami hexagon waistcoat DIY letterpress whatever.
+          | You're welcome to wear Indian or Western clothing to any of our events. The most important thing is that you're comfortable enough to dance the night away! If you would like to wear Indian clothing but don't know where to start, here are a few of our favorite online stores that ship to the US and Europe:
+        ul
+          li
+            a(href="https://www.perniaspopupshop.com/", target="pernias")
+              | Pernia's Pop-up Shop
+          li
+            a(href="http://www.aashniandco.com/", target="aashni")
+              | Aashni + Co
+          li
+            a(href="https://www.kalkifashion.com/", target="kalki")
+              | Kalki Fashion
+        p
+          | Not sure what Indian styles to pick out?
+          | For women, we recommend either a lehenga / gagra choli, saree, or anarkali. You can also accesorize with bangles and bindis. 
+          | For men, we recommend a kurta, sherwani, or a nehru jacket (which can be worn with western slacks and a collared shirt!)
 
-    .section#rsvp
+    .section.rsvp
+      a.section-anchor#rsvp
       .action-prompt
-        p.prompt We look forward to seeing you, let us know if you can attend.
-        a.action#secondary-rsvp(href="#") RSVP
+        a.button(href="#") RSVP
+        p We can't wait to celebrate with you! Please RSVP by August 1st
       .action-prompt
-        p.prompt Your presence is present enough, but we also like gifts!
-        a.action(href="#") Registry
+        a.button(href="https://www.zola.com/registry/brettandashna/", target="registry") Registry
+        p We have registered online, but your presence at our wedding is present enough!

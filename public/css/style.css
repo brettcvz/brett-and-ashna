@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Crimson+Text|Parisienne');
 
+:root {
+  --color-dark: #182D38;
+  --color-medium: #384856;
+  --color-light: #EBE6DD;
+  --color-text-on-dark: #F2DFC7;
+  --color-tan: #DED0B6;
+  --color-accent: #f3c4b4;
+  --color-accent-on-dark: #f3c4b4;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,7 +19,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: url("/images/whirlpool.png");
+  background-color: var(--color-light);
 }
 
 h1, p {
@@ -22,12 +32,39 @@ h1, h2, h3, h4 {
 
 h2.section-title {
   font-size: 36px;
-  color: #630947;
+  color: var(--color-medium);
 }
 
 p {
   font-family: 'Crimson Text', serif;
-  color: #222;
+  color: var(--color-dark);
+}
+
+li {
+  font-family: 'Crimson Text', serif;
+  color: var(--color-dark);
+}
+
+a {
+  color: var(--color-medium);
+}
+
+a:hover,
+a:focus,
+a:active
+{
+  color: var(--color-accent);
+}
+
+a.on-dark {
+  color: var(--color-accent);
+}
+
+a.on-dark:hover,
+a.on-dark:focus,
+a.on-dark:active
+{
+  color: var(--color-medium);
 }
 
 img {
@@ -84,106 +121,68 @@ header a:active {
 }
 
 .section#intro {
-  background-image: url("/images/ashnaandbrett.jpeg");
+  background-image: url("/images/intro-alt.jpg");
+  background-position: right top;
   color: #FFF;
   position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.section#intro .date {
+.section#intro #intro-text {
   position: absolute;
-  top: 12%;
-  font-family: 'Arima Madurai', cursive;
-  font-size: 24px;
-  text-shadow: 1px 1px #333;
-  background: rgba(0,0,0,.15);
-  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.15);
-  color: #FFF;
-}
-
-.section#intro h1 {
-  font-family: 'Parisienne', cursive;
-  font-size: 120px;
-  background: rgba(0,0,0,.15);
-  box-shadow: 0px 0px 35px 20px rgba(0, 0, 0, 0.15)
-}
-
-.section#intro #primary-rsvp {
-  font-family: 'Arima Madurai', cursive;
-  font-size: 24px;
-
-  border: 1px solid #630947;
-  border-radius: 10px;
-  padding: 10px 45px;
-  text-decoration: none;
-
-  background: rgb(255,255,255);
-  background: rgba(255,255,255,.8);
-  color: #630947;
-
-  position: absolute;
-  bottom: 12%;
-}
-.section#intro #primary-rsvp:hover,
-.section#intro #primary-rsvp:focus,
-.section#intro #primary-rsvp:active {
-  background: rgb(255,255,255);
-  font-weight: bold;
-  border-color: #630947;
+  left: 10%;
+  max-height: 70%;
+  max-width: 35%;
+  width: auto;
+  height: auto;
 }
 
 .section.details {
-  background-image: url("/images/falaknuma.jpg");
-  background-image: url("http://www.volt.org/Geteducated/skyglow2.gif");
+  background-color: var(--color-dark);
+  background-image: url("/images/falaknuma-line-2.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
 }
 
 .section.details .day {
-  width: 330px;
-  height: 450px;
+  width: 520px;
+  height: 500px;
   max-height: 100%;
-
-  background: #F6F6F6;
-  border: 1px solid #CCC;
-  border-radius: 2px;
 
   text-align: center;
 
-  padding: 10px 35px;
-  background: url("/images/whirlpool.png");
+  padding: 10px 70px;
 }
 
 .section.details .day .icon {
-  width: 160px;
-  height: 160px;
-  border-radius: 80px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
   margin-top: 20px;
-  border: 2px solid #222;
+  border: 2px solid var(--color-medium);
 }
 
 .section.details .day h2 {
   font-family: 'Arima Madurai', cursive;
-  color: #630947;
-  color: #222;
   margin-bottom: 0px;
+  color: var(--color-text-on-dark);
 }
 
 .section.details .day .date {
   font-size: 16px;
   margin: 0;
   text-transform: uppercase;
+  color: var(--color-text-on-dark);
 }
 
 .section.details .day .description {
   font-size: 20px;
-}
-
-.section.details .day .location {
-  margin: 0;
-  font-size: 16px;
-  display: none;
+  color: var(--color-text-on-dark);
 }
 
 .section.story {
@@ -195,7 +194,8 @@ header a:active {
   margin: 0;
   padding: 0;
   position: relative;
-  width: 70%;
+  width: 85%;
+  max-width: 900px;
 }
 
 #timeline li {
@@ -206,7 +206,7 @@ header a:active {
 }
 
 #timeline li .dot {
-  background: #222;
+  background: var(--color-medium);
   width: 6px;
   height: 12px;
   border-radius: 6px;
@@ -216,7 +216,7 @@ header a:active {
 
 #timeline li.left {
   float: left;
-  border-right: 1px solid #222;
+  border-right: 2px solid var(--color-medium);
   text-align: right;
   flex-direction: row;
   padding-bottom: 80px;
@@ -228,7 +228,7 @@ header a:active {
 
 #timeline li.right {
   float: right;
-  border-left: 1px solid #222;
+  border-left: 2px solid var(--color-medium);
   text-align: left;
   flex-direction: row-reverse;
   padding-top: 160px;
@@ -257,23 +257,44 @@ header a:active {
   font-weight: bold;
   font-size: 22px;
   margin-right: 3px;
+  color: var(--color-medium);
 }
 
-#timeline li img {
-  width: 160px;
-  height: 160px;
-  border-radius: 80px;
-  display: inline-block;
-  vertical-align: middle;
+#timeline li .icon {
+  width: 120px;
+  height: 120px;
   flex-grow: 0;
   flex-shrink: 0;
+  background-color: var(--color-dark);
+  border-radius: 60px;
+}
+
+#timeline li .icon.map svg {
+  padding: 5px;
+}
+
+#timeline li .icon.nyc svg {
+  padding: 15px;
+  padding-left: 25px;
+}
+
+#timeline li .icon.phone svg,
+#timeline li .icon.letter svg,
+#timeline li .icon.sunset svg {
+  padding: 10px;
+}
+
+#timeline li .icon svg {
+  fill: var(--color-accent-on-dark);
+  padding: 25px;
+  width: 100%;
 }
 
 #timeline li.spacer {
   height: 80px;
-  border-right: 2px solid #222;
+  border-right: 4px solid var(--color-medium);
   float: left;
-  margin-left: 1px;
+  margin-left: 2px;
 }
 
 #timeline-centerpiece {
@@ -282,10 +303,18 @@ header a:active {
   font-size: 24px;
 }
 
-#timeline-centerpiece img {
+#timeline-centerpiece .icon {
   width: 320px;
   height: 320px;
   border-radius: 160px;
+  background-color: var(--color-dark);
+  margin: auto;
+}
+
+#timeline-centerpiece .icon svg {
+  fill: var(--color-accent-on-dark);
+  padding: 20px;
+  width: 100%;
 }
 
 #carousel {
@@ -309,16 +338,16 @@ header a:active {
 }
 
 #carousel .slick-dots li button:before {
-  color: #FFF;
+  color: var(--color-light);
 }
 
 #carousel .slick-dots li.slick-active button:before {
-  color: #630947;
+  color: var(--color-accent-on-dark);
 }
 
 #carousel .slick-prev:before,
 #carousel .slick-next:before {
-  color: #FFF;
+  color: var(--color-light);
 }
 
 .section.india h3 small {
@@ -359,11 +388,43 @@ header a:active {
   margin-bottom: 100px;
 }
 
+.section.travel {
+  flex-direction: row;
+  background: var(--color-dark);
+}
+
+.section.travel .right-half {
+  height: 100%;
+  flex-grow: 0;
+}
+
+.section.travel .left-half {
+  padding-left: 60px;
+  flex-grow: 1;
+}
+
+.section.travel .left-half h2 {
+  color: var(--color-text-on-dark);
+}
+
+.section.travel .left-half h3 {
+  color: var(--color-text-on-dark);
+  margin-bottom: 8px;
+}
+
+.section.travel .left-half p {
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 550px;
+  color: var(--color-text-on-dark);
+  margin-top: 8px;
+  margin-bottom: 22px;
+}
+
 .section.clothing {
   flex-direction: row;
-  background: #FFF;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
+  background: var(--color-light);
 }
 
 .section.clothing .left-half {
@@ -373,35 +434,64 @@ header a:active {
 
 .section.clothing .right-half {
   padding-left: 30px;
+  flex-grow: 1;
 }
 
 .section.clothing .right-half p {
   text-align: left;
   font-size: 18px;
   line-height: 28px;
+  max-width: 550px;
 }
 
-.section#rsvp {
-  background-image: url("/images/toast.jpeg");
+.section.clothing .right-half li {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.section.rsvp {
+  background-image: url("/images/ocean-alt.jpg");
   flex-direction: row;
   align-items: flex-start;
+  justify-items: center;
+  background-position: top center;
 }
 
 .section .action-prompt {
-  width: 50%;
-  padding: 40px 160px;
+  padding: 40px 120px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 80px;
+  text-decoration: none;
+  display: block;
+  color: #FFF;
+}
+
+.section .action-prompt a.button {
+  font-family: 'Arima Madurai', cursive;
+  font-size: 36px;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+  padding: 16px;
+  display: block;
+  width: 200px;
+  color: #FFF;
+  text-decoration: none;
+  margin: auto;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.section .action-prompt a.button:hover {
+  color: var(--color-medium);
+  border-color: var(--color-medium);
 }
 
 .section .action-prompt p {
+  font-size: 22px;
   color: #FFF;
-  font-size: 24px;
-  line-height: 36px;
-  text-shadow: 1px 1px #333;
 }
 
 .section .action-prompt .action {
+  display: none;
   font-family: 'Arima Madurai', cursive;
   font-size: 20px;
 
