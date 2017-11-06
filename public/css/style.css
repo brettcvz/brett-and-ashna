@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Cormorant+Garamond');
 
 :root {
   --color-dark: #182D38;
@@ -36,12 +36,12 @@ h2.section-title {
 }
 
 p {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Cormorant Garamond', serif;
   color: var(--color-dark);
 }
 
 li {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Cormorant Garamond', serif;
   color: var(--color-dark);
 }
 
@@ -84,7 +84,6 @@ header:hover {
 
 header a {
   color: var(--color-text-on-dark);
-  font-family: 'Crimson Text', serif;
   font-family: 'Montserrat Alternates', sans-serif;
   padding: 14px 20px;
   text-decoration: none;
@@ -585,14 +584,14 @@ header a:active {
 
 #rsvp-modal .easy-autocomplete .eac-item {
   font-size: 16px;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Cormorant Garamond', serif;
   color: var(--color-dark);
 }
 
 #rsvp-modal #lookup-name {
   width: 100%;
   font-size: 18px;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Cormorant Garamond', serif;
   color: var(--color-dark);
 }
 
@@ -649,7 +648,7 @@ header a:active {
 #rsvp-form .party-names input {
   width: 100%;
   font-size: 18px;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Cormorant Garamond', serif;
   color: var(--color-dark);
   margin-bottom: 10px;
   padding: 2px 4px;
@@ -668,7 +667,7 @@ header a:active {
   display: block;
   width: 100%;
   font-size: 18px;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Cormorant Garamond', serif;
   padding: 8px;
   margin-bottom: 20px;
 }
