@@ -2,6 +2,7 @@ $(function(){
   $("#carousel").slick({
     autoplay: true,
     dots: true,
+    lazyLoad: "progressive",
   });
   $.modal.defaults.fadeDuration = 200;
 
