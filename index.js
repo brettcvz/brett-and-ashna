@@ -6,7 +6,6 @@ var googleAuth = require('google-auth-library');
 var auth = new googleAuth();
 var oauth2Client = new auth.OAuth2(process.env.GDOCS_CLIENT_ID, process.env.GDOCS_CLIENT_SECRET, "http://brettandashna.com/api/authorize");
 oauth2Client.credentials = JSON.parse(process.env.GDOCS_CREDENTIALS);
-console.log("Credentials", oauth2Client.credentials);
 var sheets = google.sheets('v4');
 
 var RSVP_SHEET = process.env.GDOCS_RSVP_SHEET;
