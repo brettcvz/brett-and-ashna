@@ -360,6 +360,10 @@ header a:active {
 #carousel {
   margin: 0 auto;
 	width: 100%;
+}
+
+#carousel .slick-list,
+#carousel .slick-track {
   height: 100%;
 }
 

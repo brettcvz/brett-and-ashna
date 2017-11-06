@@ -1,8 +1,15 @@
 $(function(){
-  $("#carousel").slick({
+  var carousel = $("#carousel");
+  carousel.slick({
     autoplay: true,
     dots: true,
     lazyLoad: "progressive",
+  });
+  carousel.on("lazyLoaded", function(){
+    carousel.css("height", $(window).width() * 0.666);
+  });
+  $(window).resize(function(){
+    carousel.css("height", $(window).width() * 0.666);
   });
   $.modal.defaults.fadeDuration = 200;
 
