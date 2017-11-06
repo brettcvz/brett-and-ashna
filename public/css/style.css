@@ -116,7 +116,7 @@ header a:active {
 }
 
 .section#intro {
-  background-image: url("/images/intro.jpg");
+  background-image: url("//deueg8lx9wr4g.cloudfront.net/intro.jpg");
   background-position: right top;
   color: #FFF;
   position: relative;
@@ -135,7 +135,7 @@ header a:active {
 
 .section.details {
   background-color: var(--color-dark);
-  background-image: url("/images/falaknuma-line.png");
+  background-image: url("//deueg8lx9wr4g.cloudfront.net/falaknuma-line.png");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 70%;
@@ -525,7 +525,7 @@ header a:active {
 }
 
 .section.rsvp {
-  background-image: url("/images/ocean.jpg");
+  background-image: url("//deueg8lx9wr4g.cloudfront.net/ocean.jpg");
   flex-direction: row;
   align-items: flex-start;
   justify-items: center;
