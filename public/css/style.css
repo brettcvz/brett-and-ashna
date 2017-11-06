@@ -565,3 +565,123 @@ header a:active {
   font-size: 22px;
   color: #FFF;
 }
+
+
+#rsvp-modal h3 {
+  text-align: center;
+  font-size: 24px;
+  color: var(--color-dark);
+}
+
+#rsvp-modal p {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+#rsvp-modal .easy-autocomplete {
+  width: 100% !important;
+  margin-bottom: 90px;
+}
+
+#rsvp-modal .easy-autocomplete .eac-item {
+  font-size: 16px;
+  font-family: 'Crimson Text', serif;
+  color: var(--color-dark);
+}
+
+#rsvp-modal #lookup-name {
+  width: 100%;
+  font-size: 18px;
+  font-family: 'Crimson Text', serif;
+  color: var(--color-dark);
+}
+
+#rsvp-form {
+  display: none;
+}
+
+#rsvp-form .button-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#rsvp-form button {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 18px;
+  border: 1px solid var(--color-dark);
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  background-color: #FFF;
+  color: var(--color-dark);
+}
+
+#rsvp-form button:hover,
+#rsvp-form button:focus,
+#rsvp-form button:active {
+  background-color: var(--color-medium);
+  color: var(--color-text-on-dark);
+  outline: none;
+}
+
+#rsvp-form button#submit,
+#rsvp-form button.selected {
+  background-color: var(--color-dark);
+  color: var(--color-text-on-dark);
+}
+
+#rsvp-form button#submit.disabled,
+#rsvp-form button#submit.disabled:hover,
+#rsvp-form button#submit.disabled:active,
+#rsvp-form button#submit.disabled:focus {
+  background-color: #EEE;
+  color: var(--color-medium);
+}
+
+#rsvp-form button#submit {
+  margin-bottom: 10px;
+}
+
+#rsvp-form .party-names input {
+  width: 100%;
+  font-size: 18px;
+  font-family: 'Crimson Text', serif;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+  padding: 2px 4px;
+}
+
+#rsvp-form .travel-plans p {
+  text-align: left;
+  font-size: 18px;
+}
+
+#rsvp-form .travel-plans button {
+  font-size: 14px;
+}
+
+#rsvp-form #notes {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  font-family: 'Crimson Text', serif;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+#rsvp-modal #thanks {
+  display: none;
+}
+
+#rsvp-modal #thanks p {
+  font-size: 18px;
+}
+
+#rsvp-modal #thanks p.yes,
+#rsvp-modal #thanks p.no {
+  display: none;
+}

@@ -3,14 +3,10 @@ html
   head
     title Ashna and Brett are getting married!
     link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/easy-autocomplete.min.css")
     link(rel="stylesheet",type="text/css", href="/js/slick/slick.css")
     link(rel="stylesheet",type="text/css", href="/js/slick/slick-theme.css")
     link(rel="stylesheet",type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css")
-
-    script(type="text/javascript", src="//code.jquery.com/jquery-1.11.0.min.js")
-    script(type="text/javascript", src="/js/slick/slick.min.js")
-    script(type="text/javascript", src="/js/main.js")
-    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js")
 
   body
     header
@@ -201,8 +197,39 @@ html
     .section.rsvp
       a.section-anchor#rsvp
       .action-prompt
-        a.button(href="#") RSVP
+        a.button(href="#rsvp-modal", rel="modal:open") RSVP
         p We can't wait to celebrate with you! Please RSVP by August 1st
       .action-prompt
         a.button(href="https://www.zola.com/registry/brettandashna/", target="registry") Registry
         p We have registered online, but your presence at our wedding is present enough!
+      #rsvp-modal.modal
+        h3 RSVP
+        #lookup-form
+          input#lookup-name
+        #rsvp-form
+          p.name Placeholder name
+          .yes-no.button-group
+            // Singular - plural (we) handed by JS
+            button(name="yes") Yes, I will attend
+            button(name="no") No, I can't make it
+          .additional-info
+            .party-names
+            .travel-plans
+              p Would you be interested in a group trip with other guests?
+              .button-group
+                button(name="yes") Yes please, sounds fun!
+                button(name="no") No thank you
+                button(name="maybe") Not sure yet
+          textarea#notes(placeholder="Anything else we should know?")
+          button#submit.disabled Submit
+        #thanks
+          p.yes Thank you for RSVPing, we are looking forward to seeing you at our wedding!
+          p.no Sorry you can't make it, we hope to see you soon!
+          p If anything changes, please re-submit and let us know.
+
+
+    script(type="text/javascript", src="//code.jquery.com/jquery-1.11.0.min.js")
+    script(type="text/javascript", src="/js/slick/slick.min.js")
+    script(type="text/javascript", src="/js/easy-autocomplete.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js")
+    script(type="text/javascript", src="/js/main.js")
