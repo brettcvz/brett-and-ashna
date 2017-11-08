@@ -4,3 +4,6 @@ gdoc_test.js
 TODO
 *.swp
 *.swo
+public/images/*.jpg
+public/images/*.png
+public/images/carousel
