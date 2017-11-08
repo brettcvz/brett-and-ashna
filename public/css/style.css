@@ -124,6 +124,7 @@ header a:active {
   position: relative;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .section#intro #intro-text {
@@ -779,22 +780,8 @@ header a:active {
     height: auto;
   }
 
-  #carousel .slick-prev {
-    left: 15px;
-  }
-
-  #carousel .slick-next {
-    right: 35px;
-  }
-
-  #carousel .slick-dots li {
+  #carousel {
     display: none;
-  }
-
-  #carousel .slick-prev:before,
-  #carousel .slick-next:before {
-    color: var(--color-light);
-    font-size: 30px;
   }
 
   .section.india p.intro {
@@ -810,6 +797,11 @@ header a:active {
     width: 92%;
     min-width: 92%;
     margin: 4%;
+  }
+
+  .section.india .trip .img-header img{
+    width: 100%;
+    height: auto;
   }
 
   .section.clothing .left-half {
