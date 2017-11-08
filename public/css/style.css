@@ -706,6 +706,7 @@ header a:active {
 
   .section#intro{
     background-position: right -100px top;
+    background-attachment: scroll;
   }
 
   .section#intro #intro-text {
