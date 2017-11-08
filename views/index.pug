@@ -7,14 +7,14 @@ html
     link(rel="stylesheet",type="text/css", href="/js/slick/slick.css")
     link(rel="stylesheet",type="text/css", href="/js/slick/slick-theme.css")
     link(rel="stylesheet",type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
 
   body
     header
-      a(href="#details") Our Wedding
+      a(href="#details").hideOnMobile Our Wedding
       a(href="#story") Our Story
-      a(href="#india") Experience India
-      a(href="#travel") Travel Details
-      a(href="#clothing") What to Wear
+      a(href="#india") Travel
+      a(href="#clothing").hideOnMobile What to Wear
       a(href="#rsvp") RSVP
 
     .section#intro
@@ -29,7 +29,7 @@ html
         p.description A lively and colorful evening of music and dance to celebrate the upcoming nuptials, held at the Park Hyatt, Hyderabad.
         a(href="#sangeeth", rel="modal:open") Learn more
         #sangeeth.modal.detail-modal
-          img(src="//deueg8lx9wr4g.cloudfront.net/modal-sangeeth.jpg", alt="Sangeeth detail")
+          img(src="//deueg8lx9wr4g.cloudfront.net/modal-sangeeth.jpg", alt="Sangeeth detail").hideOnMobile
           h3 Sangeeth
           p
             | The Sangeeth is a lively and colorful evening of celebratory music and dance. Friends and family of the bride's and groom’s each come prepared to face off with choreographed moves (don't worry, we'll be hosting dance practice!)
@@ -42,7 +42,7 @@ html
         p.description A traditional Hindu wedding ceremony followed by dinner and festivities at Hyderabad's iconic Falaknuma Palace.
         a(href="#kalyanam", rel="modal:open") Learn more 
         #kalyanam.modal.detail-modal
-          img(src="//deueg8lx9wr4g.cloudfront.net/modal-kalyanam.jpg", alt="Kalyanam detail")
+          img(src="//deueg8lx9wr4g.cloudfront.net/modal-kalyanam.jpg", alt="Kalyanam detail").hideOnMobile
           h3 Kalyanam
           p
             | A traditional Hindu ceremony will be followed by dinner and dancing in iconic Falaknuma Palace, once home to the monarch (Nizam) of the Hyderabad princely state. Set atop a hill, its breathtaking marble facade and terraced gardens are a window into old-world Hyderabadi splendor.

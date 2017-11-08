@@ -72,9 +72,11 @@ header {
   z-index: 1;
   text-align: center;
   width: 100%;
-  height: 50px;
   background-color: var(--color-dark);
   opacity: 0.6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 header:hover {
@@ -537,7 +539,7 @@ header a:active {
   background-position: top center;
 }
 
-.section .action-prompt {
+.section.rsvp .action-prompt {
   padding: 40px 120px;
   text-align: center;
   margin-top: 80px;
@@ -688,4 +690,165 @@ header a:active {
 #rsvp-modal #thanks p.yes,
 #rsvp-modal #thanks p.no {
   display: none;
+}
+
+/* Responsive Fixes */
+@media (max-width: 640px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .section {
+    min-height: 100%;
+    height: auto;
+  }
+
+  .section#intro{
+    background-position: right -100px top;
+  }
+
+  .section#intro #intro-text {
+    left: auto;
+    max-width: 80%;
+    max-height: 60%;
+    bottom: 20px;
+  }
+
+  .section.details {
+    flex-direction: column;
+  }
+
+  .section.details .day {
+    width: 100%;
+    padding: 20px 40px;
+  }
+
+  .section.details .day .icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  #timeline li .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  #timeline li .icon.nyc svg {
+    padding: 8px;
+    padding-left: 12px;
+  }
+
+  #timeline li .icon svg {
+    padding: 15px;
+  }
+
+
+  /* No right/left split */
+  #timeline li.left,
+  #timeline li.right {
+    width: 100%;
+    height: auto;
+    float: right;
+    border-left: 2px solid var(--color-medium);
+    border-right: none;
+    text-align: left;
+    flex-direction: row-reverse;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #timeline li.left .dot {
+    border-radius: 0 6px 6px 0;
+  }
+
+  #timeline li.left p {
+    text-align: left;
+  }
+
+  #timeline li.spacer {
+    display: none;
+  }
+
+  #timeline-centerpiece {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  #timeline-centerpiece .icon {
+    width: 70%;
+    height: auto;
+  }
+
+  #carousel .slick-prev {
+    left: 15px;
+  }
+
+  #carousel .slick-next {
+    right: 35px;
+  }
+
+  #carousel .slick-dots li {
+    display: none;
+  }
+
+  #carousel .slick-prev:before,
+  #carousel .slick-next:before {
+    color: var(--color-light);
+    font-size: 30px;
+  }
+
+  .section.india p.intro {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .section.india .trips{
+    flex-direction: column;
+  }
+
+  .section.india .trip{
+    width: auto;
+    min-width: auto;
+    margin: 10px;
+  }
+
+  .section.clothing .left-half {
+    display: none;
+  }
+  .section.clothing .right-half {
+    padding: 20px;
+  }
+
+  .section.travel .left-half {
+    padding: 20px;
+  }
+  .section.travel .right-half {
+    display: none;
+  }
+
+  .section.rsvp {
+    flex-direction: column;
+    background-position: top left;
+  }
+
+  .section.rsvp .action-prompt {
+    padding: 20px;
+  }
+
+  #rsvp-form .button-group {
+    flex-direction: column;
+  }
+
+  #rsvp-form button {
+    margin-bottom: 5px;
+  }
+
+  #rsvp-form input {
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+  }
+
+  #rsvp-form textarea {
+    border: 1px solid #ddd;
+  }
 }
