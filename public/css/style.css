@@ -807,9 +807,9 @@ header a:active {
   }
 
   .section.india .trip{
-    width: auto;
-    min-width: auto;
-    margin: 10px;
+    width: 92%;
+    min-width: 92%;
+    margin: 4%;
   }
 
   .section.clothing .left-half {
