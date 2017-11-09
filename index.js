@@ -54,10 +54,6 @@ loadRSVPData(function(err, data){
 });
 
 app.get('/', function(req, res) {
-  res.render('staging', {});
-});
-
-app.get('/preview', function(req, res) {
   res.render('index', {});
 });
 
