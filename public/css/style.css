@@ -473,6 +473,7 @@ header a:active {
 .section.travel {
   flex-direction: row;
   background: var(--color-dark);
+  background-attachment: fixed;
 }
 
 .section.travel .right-half {

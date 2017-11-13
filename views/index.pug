@@ -7,6 +7,7 @@ html
     link(rel="stylesheet",type="text/css", href="/js/slick/slick.css")
     link(rel="stylesheet",type="text/css", href="/js/slick/slick-theme.css")
     link(rel="stylesheet",type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css")
+    link(rel="stylesheet",type="text/css", href="/css/animate.css")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel="icon", type="image/png", sizes="128x128", href="/images/favicon.png")
 
@@ -68,7 +69,7 @@ html
       h2.section-title Our Story
       ul#timeline
         li.left
-          .icon.map
+          .icon.map.wow.fadeInLeft(data-wow-offset="30")
             include ../public/images/timeline/map.svg
           p
             span.year 1996
@@ -76,7 +77,7 @@ html
             | Ashna's family moved to Saratoga, just 4 miles away from Brett's home in Los Gatos. They never met.
           .dot
         li.right
-          .icon
+          .icon.wow.fadeInRight(data-wow-offset="30")
             include ../public/images/timeline/sf.svg
           p 
             span.year 2012
@@ -84,7 +85,7 @@ html
             | Brett graduated from MIT and moved to San Franciscco to do start-uppy things.
           .dot
         li.left
-          .icon.nyc
+          .icon.nyc.wow.fadeInLeft(data-wow-offset="30")
             include ../public/images/timeline/nyc.svg
           p 
             span.year 2012
@@ -92,7 +93,7 @@ html
             | Ashna graduated from Yale and headed to NYC to do business-y things. Two years later, she too made her way back West...
           .dot
         li.right
-          .icon.phone
+          .icon.phone.wow.fadeInRight(data-wow-offset="30")
             include ../public/images/timeline/phone.svg
           p 
             span.year 2014
@@ -100,7 +101,7 @@ html
             | Weeks after Ashna moved to SF, she and Brett first met. With the help of homemade snickerdoodles, what started as friendship turned into something more.
           .dot
         li.left
-          .icon.letter
+          .icon.letter.wow.fadeInLeft(data-wow-offset="30")
             include ../public/images/timeline/letter.svg
           p 
             span.year 2017
@@ -108,7 +109,7 @@ html
             | While visiting Miyajima Island in Japan, amidst sunset overlooking the sea, Brett pulled out a letter for Ashna ending in one very special question....
           .dot
         li.right
-          .icon.sunset
+          .icon.sunset.wow.fadeInRight(data-wow-offset="30")
             include ../public/images/timeline/sunset.svg
           p 
             span.year 2017
@@ -117,27 +118,25 @@ html
           .dot
         li.spacer
       #timeline-centerpiece
-        .icon
+        .icon.wow.fadeIn(data-wow-offset="30")
           include ../public/images/timeline/toast.svg
         p And now, they're getting married! It's super exciting!
       
       #carousel
         img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/4.jpg")
+        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/15.jpg")
+        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/16.jpg")
+        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/2.jpg")
         img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/1.jpg")
+        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/14.jpg")
+        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/17.jpg")
         img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/7.jpg")
         img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/10.jpg")
-        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/11.jpg")
         img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/12.jpg")
         img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/9.jpg")
         img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/13.jpg")
         img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/6.jpg")
-        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/18.jpg")
         img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/19.jpg")
-        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/14.jpg")
-        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/17.jpg")
-        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/15.jpg")
-        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/16.jpg")
-        img(data-lazy="//deueg8lx9wr4g.cloudfront.net/carousel/2.jpg")
 
     .section.india
       a.section-anchor#india
@@ -146,21 +145,21 @@ html
         | For those visiting India for the first time, we encourage you to make a trip of it! India is an incredible country and we've put together a few different itineraries that we think you'll love. Feel free to customize any of these itinerariers to your preferences, timeline, and budget. 
 
       .trips
-        .trip
+        .trip.wow.fadeInUp
           .img-header
             img(src="//deueg8lx9wr4g.cloudfront.net/trip-golden-triangle.jpg", alt="An image of the Golden Triangle")
           h3 Golden Triangle
           p Immerse yourself in the bustling lanes of Delhi, the capital metropolis; marvel at the splendor of the Taj Mahal at sunrise; ascend the Amber Fort by elephant in Jaipur.
           a(href="https://docs.google.com/document/d/1TLhYrdbanG5_BgQi-A2XP2mb3MjK0X9jHg0wDB_K5GA/view") Explore
 
-        .trip
+        .trip.wow.fadeInUp(data-wow-delay="0.15s")
           .img-header
             img(src="//deueg8lx9wr4g.cloudfront.net/trip-south.jpg", alt="An image of Kerala") 
           h3 Southern Splendors
           p This itinerary takes you to the crown Jewel of Southern India, Kerala, a layered landscape of backwater canals, beaches, hill stations, and wildlife sanctuaries.
           a(href="https://docs.google.com/document/d/1-DFWpPppUnCpdYlp-3Blbk-BkwZlAHus27rLsd1ie6U/view") Explore
 
-        .trip
+        .trip.wow.fadeInUp(data-wow-delay="0.30s")
           .img-header
             img(src="//deueg8lx9wr4g.cloudfront.net/trip-jewels.jpg", alt="An image of Hyderabad") 
           h3 Jewels of India
@@ -213,10 +212,10 @@ html
 
     .section.rsvp
       a.section-anchor#rsvp
-      .action-prompt
+      .action-prompt.wow.fadeIn
         a.button(href="#rsvp-modal", rel="modal:open") RSVP
         p We can't wait to celebrate with you! Please RSVP by August 1st
-      .action-prompt
+      .action-prompt.wow.fadeIn
         a.button(href="https://www.zola.com/registry/brettandashna/", target="registry") Registry
         p We have registered online, but your presence at our wedding is present enough!
       #rsvp-modal.modal
@@ -249,4 +248,5 @@ html
     script(type="text/javascript", src="/js/slick/slick.min.js")
     script(type="text/javascript", src="/js/easy-autocomplete.min.js")
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js")
+    script(type="text/javascript", src="/js/wow.min.js")
     script(type="text/javascript", src="/js/main.js")

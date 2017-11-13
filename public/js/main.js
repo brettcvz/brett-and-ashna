@@ -1,4 +1,9 @@
 $(function(){
+  new WOW({
+    mobile: false,
+    live: false,
+  }).init();
+
   var carousel = $("#carousel");
   carousel.slick({
     autoplay: true,
