@@ -42,7 +42,7 @@ $(function(){
       }
       return "/api/guests?search="+phrase;
     },
-    placeholder: "Please enter your name to look up your reservation",
+    placeholder: "Please enter your name to look up your invitation",
     getValue: "name",
     listLocation: "items",
     matchResponseProperty: "search",

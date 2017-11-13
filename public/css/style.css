@@ -550,6 +550,11 @@ header a:active {
   text-decoration: none;
 }
 
+.section.clothing .right-half li a:hover img {
+  transform-origin: top center;
+  animation-name: swing;
+}
+
 .section.clothing .right-half li img {
   width: 50px;
   border-radius: 25px;
