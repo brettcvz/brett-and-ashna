@@ -527,9 +527,33 @@ header a:active {
   max-width: 550px;
 }
 
+.section.clothing .right-half ul {
+  list-style-type: none;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
 .section.clothing .right-half li {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 28px;
+  text-align: center;
+  width: 200px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.section.clothing .right-half li a {
+  text-decoration: none;
+}
+
+.section.clothing .right-half li img {
+  width: 50px;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
 }
 
 .section.rsvp {
