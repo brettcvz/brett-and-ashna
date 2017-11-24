@@ -872,6 +872,14 @@ header a:active {
   .section.clothing .right-half {
     padding: 20px;
   }
+  .section.clothing .right-half ul {
+    flex-direction: column;
+  }
+
+  .section.clothing .right-half li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
   .section.travel .left-half {
     padding: 20px;
