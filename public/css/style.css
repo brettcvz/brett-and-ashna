@@ -482,7 +482,7 @@ header a:active {
 }
 
 .section.travel .left-half {
-  padding-left: 60px;
+  padding-left: 150px;
   flex-grow: 1;
 }
 
@@ -503,7 +503,38 @@ header a:active {
   padding-right: 20px;
   color: var(--color-text-on-dark);
   margin-top: 8px;
-  margin-bottom: 22px;
+  margin-bottom: 34px;
+}
+
+.section.travel .left-half .icon {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  left: 40px;
+  margin-top:-20px;
+}
+.section.travel .left-half .icon svg {
+  fill: var(--color-text-on-dark);
+  width: 100%;
+}
+
+.section.travel .left-half .icon.bell {
+  padding: 10px;
+}
+
+.section.travel .left-half .icon.airplane {
+  margin-left: 7px;
+  margin-top: 13px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 940px) {
+  .section.travel .left-half .icon {
+    display: none;
+  }
+  .section.travel .left-half {
+    padding-left: 60px;
+  }
 }
 
 .section.clothing {

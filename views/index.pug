@@ -25,18 +25,18 @@ html
     .section.details
       a.section-anchor#details
       .day#day1
-        img.icon(src="//deueg8lx9wr4g.cloudfront.net/nalugu.png", alt="Nalugu")
-        h2 Nalugu
+        img.icon(src="//deueg8lx9wr4g.cloudfront.net/nalugu.png", alt="Parichay")
+        h2 Parichay
         p.date Thursday, October 25th
-        p.description For those guests arriving in Hyderabad early, please join us for this traditional South Indian ceremony.
-        a(href="#nalugu", rel="modal:open") Learn more
-        #nalugu.modal.detail-modal
-          img(src="//deueg8lx9wr4g.cloudfront.net/modal-sangeeth.jpg", alt="Sangeeth detail").hideOnMobile
-          h3 Nalugu
+        p.description We welcome you to join us on Thursday evening as we gather with family and friends to kick off the wedding festivities.
+        a(href="#parichay", rel="modal:open") Learn more
+        #parichay.modal.detail-modal
+          img(src="//deueg8lx9wr4g.cloudfront.net/modal-parichay.png", alt="Parichay detail").hideOnMobile
+          h3 Parichay
           p
-            | The Sangeeth is a lively and colorful evening of celebratory music and dance. Friends and family of the bride's and groom’s each come prepared to face off with choreographed moves (don't worry, we'll be hosting dance practice!)
+            | We’re still working out location and details for the welcome event in Hyderabad. Please check back in a few months!
           p
-            | Recommended attire: Colorful! For those who would like to wear Indian clothes, this would be a great occasion to.
+            | Recommended attire: Western formal.
       .day#day2
         img.icon(src="//deueg8lx9wr4g.cloudfront.net/sangeeth.png", alt="Sangeeth")
         h2 Sangeeth
@@ -60,9 +60,9 @@ html
           img(src="//deueg8lx9wr4g.cloudfront.net/modal-kalyanam.jpg", alt="Kalyanam detail").hideOnMobile
           h3 Kalyanam
           p
-            | A traditional Hindu ceremony will be followed by dinner and dancing in iconic Falaknuma Palace, once home to the monarch (Nizam) of the Hyderabad princely state. Set atop a hill, its breathtaking marble facade and terraced gardens are a window into old-world Hyderabadi splendor.
+            | Brett and Ashna officially tie the knot! A traditional Hindu ceremony will be followed by dinner and dancing in iconic Falaknuma Palace, once home to the monarch (Nizam) of the Hyderabad princely state. Set atop a hill, its breathtaking marble facade and terraced gardens are a window into old-world Hyderabadi splendor. 
           p
-            | Recommended attire: Indian formal or Western black tie optional
+            | Recommended attire: Indian or Western formal.
         
     .section.story
       a.section-anchor#story
@@ -150,35 +150,41 @@ html
             img(src="//deueg8lx9wr4g.cloudfront.net/trip-golden-triangle.jpg", alt="An image of the Golden Triangle")
           h3 Golden Triangle
           p Immerse yourself in the bustling lanes of Delhi, the capital metropolis; marvel at the splendor of the Taj Mahal at sunrise; ascend the Amber Fort by elephant in Jaipur.
-          a(href="https://docs.google.com/document/d/1TLhYrdbanG5_BgQi-A2XP2mb3MjK0X9jHg0wDB_K5GA/view") Explore
+          a(href="https://deueg8lx9wr4g.cloudfront.net/itinerary/golden-triangle.pdf", target="golden") Explore
 
         .trip.wow.fadeInUp(data-wow-delay="0.15s")
           .img-header
             img(src="//deueg8lx9wr4g.cloudfront.net/trip-south.jpg", alt="An image of Kerala") 
           h3 Southern Splendors
           p This itinerary takes you to the crown Jewel of Southern India, Kerala, a layered landscape of backwater canals, beaches, hill stations, and wildlife sanctuaries.
-          a(href="https://docs.google.com/document/d/1-DFWpPppUnCpdYlp-3Blbk-BkwZlAHus27rLsd1ie6U/view") Explore
+          a(href="https://deueg8lx9wr4g.cloudfront.net/itinerary/southern-splendor.pdf", target="southern") Explore
 
         .trip.wow.fadeInUp(data-wow-delay="0.30s")
           .img-header
             img(src="//deueg8lx9wr4g.cloudfront.net/trip-jewels.jpg", alt="An image of Hyderabad") 
           h3 Jewels of India
           p For those spending a little more time in India, this trip combines the best of both the North and South.
-          a(href="https://docs.google.com/document/d/1zP1VdBItUoG2bz3RhuX5TUPznyebPZ5h1F52ekOpXzI/view") Explore
+          a(href="https://deueg8lx9wr4g.cloudfront.net/itinerary/jewels-of-india.pdf", target="jewels") Explore
 
     .section.travel
       a.section-anchor#travel
       .left-half
         h2.section-title Travel Details
         h3 Flights
+        .icon.airplane
+          include ../public/images/airplane.svg
         p
           | You can fly directly into Hyderabad via Rajiv Gandhi International Airport. If you are spending time in other cities you may want to fly in and out of Bombay or Delhi instead.  We encourage you to book your airfare as far in advance as possible for the best fares!
         h3 Visas
+        .icon.passport
+          include ../public/images/passport.svg
         p
           | All US citizens will need a visa to enter India, but you can easily 
           a.on-dark(href="https://indianvisaonline.gov.in/evisa/tvoa.html", target="evisa") file for an e-Visa online
           | . Please do so as soon as you've booked tickets!
         h3 Accommodations
+        .icon.bell
+          include ../public/images/bell.svg
         p
           | For those looking for accomodations in Hyderabad, we're working on arrangements with some wonderful local hotels. Check back in December for updated information!
 
@@ -209,6 +215,11 @@ html
           | Not sure what Indian styles to pick out?
           | For women, we recommend either a lehenga / gagra choli, saree, or anarkali. You can also accesorize with bangles and bindis. 
           | For men, we recommend a kurta, sherwani, or a nehru jacket (which can be worn with western slacks and a collared shirt!)
+        p
+          | Hyderabad at this time of year is usually about 85&deg;F during the day and 70&deg;F at night, with light humidity and an occasional rainshower - pack accordingly!
+          | If you have any questions about what to wear, feel free to 
+          a(href="mailto:reddytobvz@gmail.com", target="email") contact us
+          | .
 
     .section.rsvp
       a.section-anchor#rsvp
