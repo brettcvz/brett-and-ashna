@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var request = require('request');
 
 var google = require('googleapis');
 var googleAuth = require('google-auth-library');
@@ -9,6 +10,7 @@ oauth2Client.credentials = JSON.parse(process.env.GDOCS_CREDENTIALS);
 var sheets = google.sheets('v4');
 
 var RSVP_SHEET = process.env.GDOCS_RSVP_SHEET;
+var ZAPIER_WEBHOOK_URL = process.env.ZAPIER_WEBHOOK_URL;
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({
@@ -132,6 +134,8 @@ app.post('/api/rsvp', function(req, res) {
         console.error(err);
         return res.status(500).send("Error connecting to google");
       }
+
+      request.post(ZAPIER_WEBHOOK_URL).form({ name: rows[0][0], rsvp, notes });
 
       res.send("Success");
     });
